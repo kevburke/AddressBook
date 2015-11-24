@@ -5,23 +5,20 @@
 
 public class DataAccessException extends Exception {
 
-   private Exception exception;
- 
-   // constructor with String argument
-   public DataAccessException( String message )
-   {
-     super( message );
-   }
+    private Exception exception;
 
-   // constructor with Exception argument
-   public DataAccessException( Exception exception )
-   {
-      exception = this.exception;
-   }
+    // constructor with String argument
+    public DataAccessException(String message) {
+        super(message);
+    }
 
-   // printStackTrace of exception from constructor
-   public void printStackTrace()
-   {
-      exception.printStackTrace();
-   }
+    // constructor with Exception argument
+    public DataAccessException(Exception exception) {
+        exception = this.exception;
+    }
+
+    // printStackTrace of exception from constructor
+    public void printStackTrace() {
+        exception.printStackTrace();
+    }
 }
